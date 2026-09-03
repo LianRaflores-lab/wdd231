@@ -1,0 +1,70 @@
+:root {
+    ---Dark-Grey: rgba(34, 34, 34);
+    ---Bone-White: rgba(245, 243, 239);
+    ---Roboto-font: "Roboto", sans-serif;
+    ---Doppio-one-font: "Doppio One", sans-serif;
+    ---black: #000;
+    ---white: #fff;
+}
+
+* {
+    font-family: var(---Doppio-one-font);
+    box-sizing: border-box;
+}
+
+/*-------- Header ---------*/
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    column-gap: 8px;
+    background-color: var(---Dark-Grey);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+header span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(---Bone-White);
+}
+
+/*-------- Navigation ---------*/
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(---Bone-White);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 3rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+}
+
