@@ -1,3 +1,43 @@
-@media only screen and (min-width: 320px) {
-    
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 4fr;
+        background: var(---Bone-White);
+    }
+
+    .navigation li {
+        width: 200px;
+        height: auto;
+        transition: transform .5s ease;
+    }
+
+    .navigation li:hover {
+        border-bottom: 1px solid var(---Dark-Grey);
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .about-card p {
+        align-items: baseline;
+        padding: 2rem;
+    }
 }
