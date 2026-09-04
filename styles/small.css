@@ -164,7 +164,7 @@ h2 {
 
 .course-list .completed {
     background: var(--Dark-Grey);
-    border: var(--Bone-White);
+    border: 1px solid var(--Bone-White);
     color: var(--Bone-White);
 }
 
