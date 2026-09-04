@@ -16,6 +16,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course-list.js" defer></script>
 </head>
 <body>
     <header>
@@ -54,22 +55,14 @@
 
         <section class="courses-card">
             <h2>Web Certificate Courses</h2>
-            <div class="courses">
-                <ul>
-                    <li>All</li>
-                    <li>CSE</li>
-                    <li>WDD</li>
-                </ul>
+            <div class="courses">              
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button> 
             </div>
-            <div class="wdd">
-                <ul>
-                    <li>WDD 130</li>
-                    <li>WDD 131</li>
-                    <li>WDD 231</li>
-                </ul>
-            </div>
+            <div class="course-list" id="course-list"></div>
         </section>
-        <p>The total credits for course listed above is 6</p>
+        <p>The total credits for course listed above is&nbsp;<span id="credits"></span></p>
 
     </main>
     <footer>

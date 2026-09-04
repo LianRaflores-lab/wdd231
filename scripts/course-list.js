@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,49 @@ const courses = [
         completed: false
     }
 ]
+
+function displayCourses(courseList) {
+    const container = document.querySelector("#course-list");
+
+    container.innerHTML = "";
+
+    courseList.forEach(course => {
+        const card = document.createElement("div");
+
+        card.innerHTML = `
+            <h3>${course.subject} ${course.number}</h3>
+        `;
+
+        if (course.completed) {
+            card.innerHTML = ""
+            card.innerHTML += `<h3 class="completed">${course.subject} ${course.number} ✔ </h3>`;
+        }
+
+        container.appendChild(card);
+    });
+    
+    const totalCredits = courseList.reduce(
+        (total, course) => total + course.credits,
+        0
+    );
+
+    document.querySelector("#credits").textContent = totalCredits;
+    
+}
+
+document.querySelector("#all").addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+document.querySelector("#wdd").addEventListener("click", () => {
+    const wddCourses = courses.filter(course => course.subject === "WDD");
+    displayCourses(wddCourses);
+});
+
+document.querySelector("#cse").addEventListener("click", () => {
+    const cseCourses = courses.filter(course => course.subject === "CSE");
+    displayCourses(cseCourses);
+});
+
+displayCourses(courses);
+
