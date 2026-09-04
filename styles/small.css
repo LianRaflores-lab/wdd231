@@ -1,15 +1,15 @@
 :root {
-    ---Dark-Grey: rgba(34, 34, 34);
-    ---Bone-White: rgba(245, 243, 239);
-    ---Roboto-font: "Roboto", sans-serif;
-    ---Doppio-one-font: "Doppio One", sans-serif;
-    ---black: #000;
-    ---white: #fff;
-    ---light-grey: rgba(243, 244, 246);
+    --Dark-Grey: rgb(34, 34, 34);
+    --Bone-White: rgb(245, 243, 239);
+    --Roboto-font: "Roboto", sans-serif;
+    --Doppio-one-font: "Doppio One", sans-serif;
+    --black: #000;
+    --white: #fff;
+    --light-grey: rgb(243, 244, 246);
 }
 
 * {
-    font-family: var(---Doppio-one-font);
+    font-family: var(--Doppio-one-font);
     box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ header {
     padding: 1rem;
     align-items: center;
     column-gap: 8px;
-    background-color: var(---Dark-Grey);
+    background-color: var(--Dark-Grey);
 }
 
 header img {
@@ -34,7 +34,7 @@ header img {
 header span {
     font-size: 1.6rem;
     font-weight: bold;
-    color: var(---Bone-White);
+    color: var(--Bone-White);
 }
 
 /*-------- Hamburger ---------*/
@@ -43,7 +43,7 @@ header span {
     background: none;
     border: none;
     font-size: 2rem;
-    color: var(---Bone-White);
+    color: var(--Bone-White);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -76,16 +76,16 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: var(---Dark-Grey);
+    color: var(--Dark-Grey);
     text-decoration: none;
     border-bottom: solid 1px #ddd;
-    background: var(---Bone-White);
+    background: var(--Bone-White);
 }
 
 .navigation li.current a {
-    background: var(---Dark-Grey);
-    color: var(---Bone-White);
-    border: 1px solid var(---Bone-White)
+    background: var(--Dark-Grey);
+    color: var(--Bone-White);
+    border: 1px solid var(--Bone-White);
 }
 
 /*-------- Main ---------*/
@@ -98,7 +98,7 @@ h1 {
     text-align: justify;
     margin: 0 1rem;
     padding: 1rem 1.2rem;
-    background: var(---light-grey);
+    background: var(--light-grey);
     font-size: 1.2rem;
     min-height: 20rem;
 }
@@ -108,14 +108,14 @@ h2 {
     margin: 1rem;
     margin-bottom: 0;
     text-align: center;
-    background: var(---Dark-Grey);
-    color: var(---Bone-White);
+    background: var(--Dark-Grey);
+    color: var(--Bone-White);
 }
 
 .photo-card p {
     margin: 0 1rem;
     padding: 1rem 1.2rem;
-    background: var(---light-grey);
+    background: var(--light-grey);
     font-size: 1.2rem;
     min-height: 20rem;
 }
@@ -154,18 +154,18 @@ h2 {
 }
 
 .course-list h3 {
-    background: var(---light-grey);
-    border: 2px solid var(---Dark-Grey);
-    color: var(---black);
+    background: var(--light-grey);
+    border: 2px solid var(--Dark-Grey);
+    color: var(--black);
     padding: 6px;
     text-align: center;
     margin-bottom: 4px;
 }
 
 .course-list .completed {
-    background: var(---Dark-Grey);
-    border: var(---Bone-White);
-    color: var(---Bone-White);
+    background: var(--Dark-Grey);
+    border: var(--Bone-White);
+    color: var(--Bone-White);
 }
 
 main p {
@@ -202,6 +202,6 @@ main p {
 
 .copyright {
     padding: 1rem;
-    background: var(---Dark-Grey);
-    color: var(---Bone-White);
+    background: var(--Dark-Grey);
+    color: var(--Bone-White);
 }

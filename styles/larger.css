@@ -18,7 +18,7 @@
     .navigation ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 4fr;
-        background: var(---Bone-White);
+        background: var(--Bone-White);
     }
 
     .navigation li {
@@ -28,7 +28,7 @@
     }
 
     .navigation li:hover {
-        border-bottom: 1px solid var(---Dark-Grey);
+        border-bottom: 1px solid var(--Dark-Grey);
     }
 
     .about-container {
