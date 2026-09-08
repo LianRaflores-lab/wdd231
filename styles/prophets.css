@@ -1,0 +1,49 @@
+:root {
+    --card-blue: rgb(185, 185, 204);
+    --font-blue: rgb(77, 77, 150);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+section {
+    display: grid;
+    margin: .5rem;
+    padding: 1rem;
+    background: var(--card-blue);
+    border: 1px solid var(--font-blue);
+}
+
+section h2 {
+    color: var(--font-blue);
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+section span {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0 ;
+}
+
+img {
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

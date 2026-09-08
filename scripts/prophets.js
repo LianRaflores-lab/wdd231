@@ -1,4 +1,4 @@
-const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json.';
+const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
 
 const cards = document.querySelector("#cards");
 
@@ -12,23 +12,33 @@ const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
         let card = document.createElement('section');
         let fullName = document.createElement('h2');
+        let birthday = document.createElement('span');
+        let birthPlace = document.createElement('span');
         let portrait = document.createElement('img');
 
         fullName.textContent = 
-            `${prophet.firstName} ${prophet.lastName}`;
+            `${prophet.name} ${prophet.lastname}`;
 
         portrait.setAttribute('src', prophet.imageurl);
 
         portrait.setAttribute(
             'alt',
-            `Portrait of ${prophet.firstName} ${prophet.lastName}`
+            `Portrait of ${prophet.name} ${prophet.lastname}`
         );
 
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
+        birthday.textContent = 
+            `Date of Birth: ${prophet.birthdate}`;
+        
+        birthPlace.textContent = 
+            `Place of Birth: ${prophet.birthplace}`;
+
         card.appendChild(fullName);
+        card.appendChild(birthday);
+        card.appendChild(birthPlace);
         card.appendChild(portrait);
 
         cards.appendChild(card);
