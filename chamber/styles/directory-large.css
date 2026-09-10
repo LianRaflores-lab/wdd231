@@ -1,0 +1,33 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 4fr;
+        background: var(--Bone-White);
+    }
+
+    .navigation li {
+        width: 200px;
+        height: auto;
+        transition: transform .5s ease;
+    }
+
+    .navigation li:hover {
+        border-bottom: 1px solid var(--Dark-Grey);
+    }
+}
