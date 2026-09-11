@@ -18,6 +18,7 @@
 header {
     display: grid;
     grid-template-columns: 2fr 6fr 1fr;
+    margin: 0;
     padding: 1rem;
     align-items: center;
     column-gap: 8px;
@@ -80,6 +81,11 @@ header span {
     text-decoration: none;
     border-bottom: solid 1px #ddd;
     background: var(--Bone-White);
+    transition: transform 0.2s ease;
+}
+
+.navigation a:hover {
+    transform: scale(0.99);
 }
 
 .navigation li.current a {
@@ -87,6 +93,33 @@ header span {
     color: var(--Bone-White);
     border: 1px solid var(--Bone-White);
 }
+
+/*-------- Main ---------*/
+
+h1 {
+    margin: 1rem;
+}
+
+.info-box img {
+    margin-top: .5rem;
+    width: 85%;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid var(--black);
+}
+
+.info-box {
+    margin: 1rem;
+    padding: 1rem;
+    background: var(--light-grey);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-box h2 {
+    grid-column: 1 / -1;
+}
+
 
 /*-------- Footer ---------*/
 

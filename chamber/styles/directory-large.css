@@ -35,4 +35,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #cards img {
+        width: 60%;
+        margin-left: 1.5rem;
+    }
 }
