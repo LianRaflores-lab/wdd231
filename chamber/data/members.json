@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Hillside Brew Café",
+        "address": "45 Sumulong Highway, Antipolo City, Rizal",
+        "phone": "(02) 8123 4567",
+        "website": "https://hillsidebrew.example.com",
+        "image": "hillside-brew.jpg",
+        "membership": 3,
+        "description": "A locally owned café serving coffee, pastries, and Filipino-inspired snacks."
+    },
+    {
+        "name": "Rizal Craftworks",
+        "address": "18 Taktak Road, Antipolo City, Rizal",
+        "phone": "0917 234 5678",
+        "website": "https://rizalcraftworks.example.com",
+        "image": "rizal-craftworks.jpg",
+        "membership": 2,
+        "description": "A handmade crafts business featuring locally inspired home décor and gifts."
+    },
+    {
+        "name": "Antipolo Green Garden",
+        "address": "72 Marcos Highway, Antipolo City, Rizal",
+        "phone": "0920 345 6789",
+        "website": "https://antipologreengarden.example.com",
+        "image": "antipolo-green-garden.jpg",
+        "membership": 1,
+        "description": "A garden center offering ornamental plants, gardening supplies, and landscaping services."
+    },
+    {
+        "name": "Summit Digital Solutions",
+        "address": "23 M. L. Quezon Street, Antipolo City, Rizal",
+        "phone": "(02) 8234 5678",
+        "website": "https://summitdigital.example.com",
+        "image": "summit-digital.jpg",
+        "membership": 3,
+        "description": "A technology company providing websites, digital marketing, and IT services."
+    },
+    {
+        "name": "Tahanan Furniture Studio",
+        "address": "91 Circumferential Road, Antipolo City, Rizal",
+        "phone": "0918 456 7890",
+        "website": "https://tahananfurniture.example.com",
+        "image": "tahanan-furniture.jpg",
+        "membership": 2,
+        "description": "A local furniture studio creating modern furniture inspired by Filipino design."
+    },
+    {
+        "name": "Cloud Nine Events",
+        "address": "36 Dela Paz Street, Antipolo City, Rizal",
+        "phone": "0921 567 8901",
+        "website": "https://cloudnineevents.example.com",
+        "image": "cloud-nine-events.jpg",
+        "membership": 1,
+        "description": "An event planning company specializing in weddings, birthdays, and corporate events."
+    },
+    {
+        "name": "Lutong Antipolo Kitchen",
+        "address": "14 San Roque Avenue, Antipolo City, Rizal",
+        "phone": "0919 678 9012",
+        "website": "https://lutongantipolo.example.com",
+        "image": "lutong-antipolo.jpg",
+        "membership": 3,
+        "description": "A family-owned restaurant serving Filipino comfort food and local specialties."
+    },
+    {
+        "name": "Peak Fitness Antipolo",
+        "address": "108 P. Oliveros Street, Antipolo City, Rizal",
+        "phone": "0922 789 0123",
+        "website": "https://peakfitness.example.com",
+        "image": "peak-fitness.jpg",
+        "membership": 2,
+        "description": "A community fitness center offering personal training, group classes, and wellness programs."
+    },
+    {
+        "name": "Vista Creative Studio",
+        "address": "55 Cupang Road, Antipolo City, Rizal",
+        "phone": "0917 890 1234",
+        "website": "https://vistacreative.example.com",
+        "image": "vista-creative.jpg",
+        "membership": 1,
+        "description": "A creative studio providing photography, graphic design, and branding services."
+    },
+    {
+        "name": "Mountain View Bakery",
+        "address": "27 Hinulugang Taktak Road, Antipolo City, Rizal",
+        "phone": "0923 901 2345",
+        "website": "https://mountainviewbakery.example.com",
+        "image": "mountain-view-bakery.jpg",
+        "membership": 2,
+        "description": "A neighborhood bakery offering fresh breads, cakes, pastries, and Filipino desserts."
+    }
+]

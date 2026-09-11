@@ -7,42 +7,63 @@
     <meta name="author" content="Lianzel Raflores">
     <meta name="description" content="WDD 231 Week 2 Project">
 
-    <link rel="icon" href="#">
+    <link rel="icon" href="images/favicon.ico">
 
-    <meta property="og:title" content="WDD 231 Week 2 Project - Chamber of Commerce Home page">
-    <meta name="og:description" content="Lian Raflores' WDD 231 Web Frontend Development Week 2 Chamber of Commerce Homepage Project">
+    <meta property="og:title" content="WDD 231 Week 2 Project - Antipolo Chamber of Commerce directory page">
+    <meta name="og:description" content="Lian Raflores' WDD 231 Web Frontend Development Week 2 Chamber of Commerce directory page Project">
     <meta property="og:image" content="C:\Users\nailr\OneDrive\Documents\wdd231\chamber\images\ac-logo.svg">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="https://lianraflores-lab.github.io/wdd231/chamber/directory.html">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory-small.css">
     <link rel="stylesheet" href="styles/directory-large.css">
+
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <img src="images/website_logo.svg" alt="Website Logo">
-        <span class="name">Lianzel Raflores</span>
+        <img src="images/ac-logo.svg" alt="Website Logo">
+        <span class="name">Antipolo City Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="menu button"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Projects</a></li>
-            <li><a href="#">Final Project</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discovery</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <div id="cards"></div>
+    </main>
     <footer>
+
+        <section class="copyright info">
+            <span class="bold">Antipolo Chamber of Commerce</span>
+            <p>11 San Luis Street</p>
+            <p>Antipolo City, Rizal</p>
+            <p>info@antipolocc.org</p>
+            <p>(122) 333 4444</p>
+        </section>
+        
         <section class="link-icons">
             <a href="https://www.linkedin.com/in/lianzel-raflores-3ba14726a/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
             <a href="https://github.com/LianRaflores-lab" target="_blank"><img src="images/github.svg" alt="Github"></a>
             <a href="https://www.facebook.com/lian.raflores" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
         </section>
+
         
         <section class="copyright">
-            <p>©<span id="currentyear"></span> | Lianzel Raflores | Philippines</p>
+            <p>WDD 231 | Class Project</p>
+            <p>©<span id="currentyear"></span>&nbsp;| Lianzel Raflores | Philippines</p>
             <p id="lastModified"></p>
         </section>
     </footer>

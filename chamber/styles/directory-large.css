@@ -30,4 +30,9 @@
     .navigation li:hover {
         border-bottom: 1px solid var(--Dark-Grey);
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
