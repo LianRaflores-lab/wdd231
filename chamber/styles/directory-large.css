@@ -86,4 +86,31 @@
         display: flex;
         align-items: center;
     }
+
+    .hero-image-large {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+
+    .hero-image-small {
+        display: none;
+    }
+
+    .hero-content {
+        height: 25%;
+    }
+
+    .home-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }

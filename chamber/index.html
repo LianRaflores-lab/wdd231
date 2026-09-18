@@ -20,6 +20,8 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +42,55 @@
         </ul>
     </nav>
     <main>
+        <section class="hero">
+            <img src="images/antipolo-background-small.jpg" alt="View of Antipolo City" class="hero-image-small">
+            <img src="images/antipolo-background-large.jpg" alt="View of Antipolo City" class="hero-image-large">
 
+            <div class="hero-content">
+                <h1>Antipolo City Chamber of Commerce</h1>
+                <a href="join.html" class="join-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-info">
+            <section class="events">
+                <h2>Current Events</h2>
+
+                <article>
+                    <h3>Business Networking Event</h3>
+                    <p>Join local business owners for an evening of networking.</p>
+                    <p>September 25, 2026</p>
+                </article>
+
+                <article>
+                    <h3>Antipolo Business Workshop</h3>
+                    <p>Learn strategies for growing your local business.</p>
+                    <p>October 2, 2026</p>
+                </article>
+            </section>
+
+            <section class="weather">
+                <h2>Antipolo Weather</h2>
+
+                <div id="current-weather">
+                    <h3>Current Weather</h3>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p id="description"></p>
+                </div>
+
+                <div id="forecast">
+                    <h3>3-Day Forecast</h3>
+
+                    <div id="forecast-container"></div>
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlight-container"></div>
+        </section>
     </main>
     <footer>
 
