@@ -35,3 +35,18 @@ async function getCompanies() {
 };
 
 getCompanies();
+
+const gridViewBtn = document.getElementById("grid-view");
+const listViewBtn = document.getElementById("list-view");
+
+const directory = document.getElementById("cards");
+
+gridViewBtn.addEventListener("click", () => {
+    directory.classList.add("grid");
+    directory.classList.remove("list");
+});
+
+listViewBtn.addEventListener("click", () => {
+    directory.classList.add("list");
+    directory.classList.remove("grid");
+});

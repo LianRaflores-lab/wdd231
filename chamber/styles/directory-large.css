@@ -46,4 +46,44 @@
         width: 60%;
         margin-left: 1.5rem;
     }
+
+    #view {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .view-btn {
+        background-color: var(--Dark-Grey);
+        color: var(--Bone-White);
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .view-btn:hover {
+        background-color: var(--Light-Grey);
+        color: var(--Dark-Grey);
+        border: 1px solid var(--Dark-Grey);
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+    }
+
+    #cards.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+    #cards.list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #cards.list .card {
+        display: flex;
+        align-items: center;
+    }
 }
