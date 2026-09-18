@@ -24,7 +24,7 @@ function displaySpotlights(members) {
 
         card.innerHTML = `
             <img src="images/${member.image}" 
-                 alt="${member.name} logo">
+                 alt="${member.name} logo" loading="lazy" width="200" height="200">
 
             <h3>${member.name}</h3>
 

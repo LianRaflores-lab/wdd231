@@ -312,7 +312,7 @@ footer {
 #spotlight-container img {
     display: flex;
     justify-content: center;
-    width: 50%;
+    max-width: 100px;
     height: auto;
     border-radius: 40px;
     margin: 0.5rem auto;
