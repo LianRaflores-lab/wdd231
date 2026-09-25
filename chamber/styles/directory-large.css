@@ -113,4 +113,32 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
+
+    .page-heading { 
+        padding: 3rem 1rem; 
+    } 
+    
+    .page-heading h2 { 
+        font-size: 2rem; 
+    }
+
+    .join-container { 
+        grid-template-columns: 1.2fr 0.8fr; 
+        align-items: start; 
+    }  
+    
+    .membership-cards { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .form-section { 
+        padding: 2rem; 
+    } 
+    
+    .submit-button { 
+        width: auto; 
+        align-self: flex-start; 
+        padding: 0.9rem 2rem; 
+    }
+    
 }

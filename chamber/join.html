@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antipolo City Chamber of Commerce Join Page</title>
+    <meta name="author" content="Lianzel Raflores">
+    <meta name="description" content="Lian Raflores' WDD 231 Web Frontend Development Week 2 Chamber of Commerce Join Page Project">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="WDD 231 Week 2 Project - Antipolo Chamber of Commerce Join Page">
+    <meta property="og:description" content="Connect with local businesses and explore the Antipolo City Join Page.">
+    <meta property="og:image" content="https://lianraflores-lab.github.io/wdd231/chamber/images/ac-logo.svg">
+    <meta property="og:url" content="https://lianraflores-lab.github.io/wdd231/chamber/join.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/ac-logo.svg" alt="Website Logo" loading="lazy">
+        <span class="name">Antipolo City Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="menu button"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="discovery.html">Discovery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-heading">
+            <h2>Join the Chamber</h2>
+            <p>
+                Become a member of the Antipolo City Chamber of Commerce
+                and connect with businesses and opportunities in our community.
+            </p>
+        </section>
+
+
+        <div class="join-container">
+
+            <!-- APPLICATION FORM -->
+            <section class="form-section">
+
+                <h2>Membership Application</h2>
+
+                <form action="thankyou.html" method="get">
+
+                    <label>
+                        First Name *
+                        <input
+                            type="text"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+
+                    <label>
+                        Last Name *
+                        <input
+                            type="text"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="organizationTitle"
+                            title="Enter your title within your organization"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-zÀ-ÿ\s-]{7,}"
+                            placeholder="Example: Marketing Manager">
+                        <small>
+                            Minimum 7 characters. Letters, spaces, and hyphens only.
+                        </small>
+                    </label>
+
+
+                    <label>
+                        Email Address *
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+
+                    <label>
+                        Mobile Phone *
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+
+                    <label>
+                        Business / Organization Name *
+                        <input
+                            type="text"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+
+                    <fieldset>
+
+                        <legend>Membership Level *</legend>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="np"
+                                required>
+                            NP Membership
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="membership"
+                                value="gold">
+                            Gold Membership
+                        </label>
+
+                    </fieldset>
+
+
+                    <label>
+                        Business / Organization Description
+                        <textarea
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="6"></textarea>
+                    </label>
+
+
+                    <input
+                        type="hidden"
+                        name="timestamp"
+                        id="timestamp">
+
+
+                    <input
+                        type="submit"
+                        value="Submit Application"
+                        class="submit-button">
+
+                </form>
+
+            </section>
+
+
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <article class="membership-card">
+
+                        <div class="card-icon">🤝</div>
+
+                        <h3>NP Membership</h3>
+
+                        <p class="price">Free</p>
+
+                        <p>
+                            Designed for nonprofit organizations
+                            serving the Antipolo community.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="np-modal">
+                            Learn More
+                        </button>
+
+                    </article>
+
+
+                    <article class="membership-card">
+
+                        <div class="card-icon">🥉</div>
+
+                        <h3>Bronze Membership</h3>
+
+                        <p class="price">₱2,500 / year</p>
+
+                        <p>
+                            A great starting membership for
+                            small and growing businesses.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="bronze-modal">
+                            Learn More
+                        </button>
+
+                    </article>
+
+
+                    <article class="membership-card">
+
+                        <div class="card-icon">🥈</div>
+
+                        <h3>Silver Membership</h3>
+
+                        <p class="price">₱5,000 / year</p>
+
+                        <p>
+                            Additional promotional and networking
+                            opportunities for established businesses.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="silver-modal">
+                            Learn More
+                        </button>
+
+                    </article>
+
+
+                    <article class="membership-card">
+
+                        <div class="card-icon">🥇</div>
+
+                        <h3>Gold Membership</h3>
+
+                        <p class="price">₱10,000 / year</p>
+
+                        <p>
+                            Our highest membership level with
+                            additional promotional opportunities.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="modal-button"
+                            data-modal="gold-modal">
+                            Learn More
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <dialog id="np-modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal"
+                    aria-label="Close NP membership information">
+                &times;
+            </button>
+
+            <h2>NP Membership</h2>
+
+            <p>
+                NP Membership is available to nonprofit organizations
+                that contribute to the local community.
+            </p>
+
+            <ul>
+                <li>Free membership</li>
+                <li>Access to chamber events</li>
+                <li>Community networking opportunities</li>
+                <li>Training opportunities</li>
+                <li>Community event participation</li>
+            </ul>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog id="bronze-modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal"
+                    aria-label="Close Bronze membership information">
+                &times;
+            </button>
+
+            <h2>Bronze Membership</h2>
+
+            <p>
+                Bronze Membership provides essential networking
+                and promotional opportunities for small businesses.
+            </p>
+
+            <ul>
+                <li>All NP membership benefits</li>
+                <li>Business networking events</li>
+                <li>Member discounts</li>
+                <li>Basic business training</li>
+                <li>Social media recognition</li>
+            </ul>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog id="silver-modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal"
+                    aria-label="Close Silver membership information">
+                &times;
+            </button>
+
+            <h2>Silver Membership</h2>
+
+            <p>
+                Silver Membership gives established businesses
+                additional opportunities to promote their services.
+            </p>
+
+            <ul>
+                <li>All Bronze membership benefits</li>
+                <li>Additional event discounts</li>
+                <li>Priority networking opportunities</li>
+                <li>Business training sessions</li>
+                <li>Website business spotlight opportunities</li>
+            </ul>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog id="gold-modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal"
+                    aria-label="Close Gold membership information">
+                &times;
+            </button>
+
+            <h2>Gold Membership</h2>
+
+            <p>
+                Gold Membership provides the highest level of
+                promotional and networking opportunities.
+            </p>
+
+            <ul>
+                <li>All Silver membership benefits</li>
+                <li>Premium business promotion</li>
+                <li>Priority event registration</li>
+                <li>Featured business spotlight opportunities</li>
+                <li>Additional advertising opportunities</li>
+                <li>Exclusive networking events</li>
+            </ul>
+
+        </div>
+
+    </dialog>
+
+    <footer>
+
+        <section class="copyright info">
+            <span class="bold">Antipolo Chamber of Commerce</span>
+            <p>11 San Luis Street</p>
+            <p>Antipolo City, Rizal</p>
+            <p>info@antipolocc.org</p>
+            <p>(122) 333 4444</p>
+        </section>
+        
+        <section class="link-icons">
+            <a href="https://www.linkedin.com/in/lianzel-raflores-3ba14726a/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/LianRaflores-lab" target="_blank"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://www.facebook.com/lian.raflores" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        </section>
+
+        
+        <section class="copyright">
+            <p>WDD 231 | Class Project</p>
+            <p>©<span id="currentyear"></span>&nbsp;| Lianzel Raflores | Philippines</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+
+</body>
+</html>

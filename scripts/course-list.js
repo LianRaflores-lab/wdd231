@@ -78,6 +78,31 @@ const courses = [
     }
 ]
 
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="close-dialog">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p>
+            <strong>Technologies:</strong>
+            ${course.technology.join(", ")}
+        </p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#close-dialog");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 function displayCourses(courseList) {
     const container = document.querySelector("#course-list");
 
@@ -92,8 +117,12 @@ function displayCourses(courseList) {
 
         if (course.completed) {
             card.innerHTML = ""
-            card.innerHTML += `<h3 class="completed">${course.subject} ${course.number} ✔ </h3>`;
+            card.innerHTML += `<h3 class="completed">${course.subject} ${course.number} ✔</h3>`;
         }
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         container.appendChild(card);
     });
