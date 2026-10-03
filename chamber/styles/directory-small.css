@@ -142,6 +142,9 @@ footer {
     max-width: 100px;
     height: auto;
     transition: transform 0.2s ease;
+    width: 40px;
+    height: 40px;
+    display: block;
 }
 
 .link-icons img:hover {
