@@ -585,3 +585,120 @@ dialog::backdrop {
     background-color: #ddd; 
 }
 
+/*--------------- Discover Page ---------------*/
+
+/*----- Cards -----*/
+
+#discover-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#discover-container article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+}
+
+#discover-container h2 {
+    margin: .5rem 0 1rem 0;
+}
+
+#discover-container figure {
+    margin: 0;
+}
+
+#discover-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50px;
+    padding: 0.5rem 0 1rem 0;
+}
+
+#discover-container p {
+    margin: 0.5rem 0;
+    color: var(--Dark-Grey);
+}
+
+#discover-container address {
+    font-style: normal;
+    color: var(--Dark-Grey);
+    margin: 0.5rem 0;
+}
+
+#discover-container button {
+    background-color: var(--Dark-Grey);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#discover-container button:hover {
+    background-color: var(--Light-Blue);
+    transform: scale(1.03);
+    color: var(--Dark-Grey);
+    border: 1px solid var(--Dark-Grey);
+}
+
+#discover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+#discover-container article:nth-child(1) {
+    grid-area: card1;
+}
+
+#discover-container article:nth-child(2) {
+    grid-area: card2;
+}
+
+#discover-container article:nth-child(3) {
+    grid-area: card3;
+}
+
+#discover-container article:nth-child(4) {
+    grid-area: card4;
+}
+
+#discover-container article:nth-child(5) {
+    grid-area: card5;
+}
+
+#discover-container article:nth-child(6) {
+    grid-area: card6;
+}
+
+#discover-container article:nth-child(7) {
+    grid-area: card7;
+}
+
+#discover-container article:nth-child(8) {
+    grid-area: card8;
+}
+
+#visit-message {
+    background-color: var(--Light-Blue);
+    color: var(--Dark-Grey);
+    border: 1px solid var(--Dark-Grey);
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+    text-align: center;
+}

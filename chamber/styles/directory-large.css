@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 1025px) {
     header, main, nav, footer {
         margin: 0 auto;
     }
@@ -139,6 +139,15 @@
         width: auto; 
         align-self: flex-start; 
         padding: 0.9rem 2rem; 
+    }
+
+    #discover-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card5 card6"
+            "card7 card8 card8 card6";
     }
     
 }
