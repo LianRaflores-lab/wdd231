@@ -168,6 +168,21 @@ footer {
     padding: 1rem;
 }
 
+.link-icons img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+#lastModified {
+    min-height: 1.2em;
+}
+
+#currentyear {
+    display: inline-block;
+    min-width: 4ch;
+}
+
 /*--------------- Index ---------------*/
 
 /*-------- Hero Section ---------*/
