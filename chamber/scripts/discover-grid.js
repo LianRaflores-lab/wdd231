@@ -2,6 +2,8 @@ import discoverPlaces from '../data/discover.mjs';
 
 const discoverContainer = document.getElementById('discover-container');
 
+let index = 0;
+
 discoverPlaces.forEach(place => {
     const card = document.createElement("article");
 
@@ -12,7 +14,9 @@ discoverPlaces.forEach(place => {
             <img 
                 src="${place.image}" 
                 alt="${place.name}"
-                loading="lazy"
+                width="300"
+                height="200"
+                ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}
             >
         </figure>
 
@@ -24,8 +28,9 @@ discoverPlaces.forEach(place => {
     `;
 
     discoverContainer.appendChild(card);
-});
 
+    index++;
+});
 
 const visitMessage = document.querySelector("#visit-message");
 
