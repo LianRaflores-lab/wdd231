@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salo-Salo Home page</title>
+    <meta name="description" content="Salo-Salo is a website that helps people across the globe explore and learn the beauty and majesty of Filipino cuisine">
+    <meta name="author" content="Lianzel Raflores">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/salo-small.css">
+    <link rel="stylesheet" href="styles/salo-large.css">
+
+    <script type="module" src="scripts/feature.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+    <meta property="og:title" content="Salo-Salo Filipino Food Guide">
+    <meta name="og:description" content="Lian Raflores' WDD 231 Web Frontend Development Final project homepage.">
+    <meta property="og:image" content="https://lianraflores-lab.github.io/wdd231/final/images/salo-salo-logo.png">
+    <meta property="og:url" content="https://salo-salo.com">
+</head>
+<body>
+    <header>
+        <img src="images/salo-salo-logo.png" alt="Website Logo">
+        <span class="name">Salo-Salo</span>
+        <button id="ham-btn" class="hamburger" aria-label="menu button"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="salo-salo.html">Home</a></li>
+            <li><a href="#">Dishes</a></li>
+            <li><a href="#">Regions</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="Filipino food served on a table">
+    
+            <div class="hero-content">
+                <h1>Salo-Salo</h1>
+                <p>Discover delicious Filipino food and the stories behind every dish.</p>
+                <a href="#" class="hero-button">Explore Filipino Food</a>
+            </div>
+        </section>
+
+        <section class="feature">
+            <h1>Featured Dishes</h1>
+
+            <div id="featured-dishes"></div>
+        </section>
+
+        <section class="explore">
+            <h1>Explore Filipino Food by Regions</h1>
+
+            <div class="region-card">
+                <a href="regions.html" class="region-card luzon">
+                    <img src="images/luzon.webp" alt="Rice Terraces">
+                    <span>Luzon</span>
+                </a>
+
+                <a href="regions.html" class="region-card visayas">
+                    <img src="images/visayas.webp" alt="View of the sea">
+                    <span>Visayas</span>
+                </a>
+
+                <a href="regions.html" class="region-card mindanao">
+                    <img src="images/mindanao.webp" alt="Las Casas Filipinas de Acuzar">
+                    <span>Mindanao</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="copyright info">
+            <span class="bold">Salo-Salo Filipino Food Guide</span>
+            <p>11 San Luis Street</p>
+            <p>Antipolo City, Rizal</p>
+            <p>info@salo-salo.org</p>
+            <p>(122) 333 4444</p>
+        </section>
+
+        <section class="link-icons">
+            <a href="https://www.linkedin.com/in/lianzel-raflores-3ba14726a/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/LianRaflores-lab" target="_blank"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://www.facebook.com/lian.raflores" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        </section>
+
+        <section class="copyright">
+            <p>WDD 231 | Final Project</p>
+            <p>©<span id="currentyear"></span>&nbsp;| Lianzel Raflores | Philippines</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+    
+</body>
+</html>

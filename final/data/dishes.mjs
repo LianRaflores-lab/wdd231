@@ -1,0 +1,107 @@
+const filipinoDishes = [
+    {
+        name: "Adobo",
+        description: "A savory dish of meat, usually chicken or pork, simmered with vinegar, garlic, soy sauce, peppercorns, and bay leaves.",
+        region: "Luzon",
+        origin: "Philippines",
+        image: "images/adobo.webp"
+    },
+
+    {
+        name: "Sinigang",
+        description: "A comforting sour soup made with meat or seafood, vegetables, and a souring ingredient such as tamarind.",
+        region: "Luzon",
+        origin: "Tagalog regions",
+        image: "images/sinigang.webp"
+    },
+
+    {
+        name: "Sisig",
+        description: "Chopped and seasoned pork, traditionally made from parts of the pig's head and served sizzling with onions, calamansi, and chili.",
+        region: "Luzon",
+        origin: "Pampanga",
+        image: "images/sisig.webp"
+    },
+
+    {
+        name: "Kare-Kare",
+        description: "A rich stew made with meat and vegetables in a thick peanut-based sauce, commonly served with bagoong.",
+        region: "Luzon",
+        origin: "Pampanga",
+        image: "images/hero.webp"
+    },
+
+    {
+        name: "Pinakbet",
+        description: "A vegetable dish made with ingredients such as bitter melon, eggplant, squash, okra, and beans, traditionally flavored with fermented fish or shrimp.",
+        region: "Luzon",
+        origin: "Ilocos",
+        image: "images/pinakbet.webp"
+    },
+
+    {
+        name: "Bicol Express",
+        description: "A spicy and creamy pork dish cooked with coconut milk, chili peppers, shrimp paste, and aromatics.",
+        region: "Luzon",
+        origin: "Bicol",
+        image: "images/bicol-exp.webp"
+    },
+
+    {
+        name: "Chicken Inasal",
+        description: "Grilled chicken marinated with vinegar, calamansi, garlic, ginger, and other seasonings, then basted while grilling.",
+        region: "Visayas",
+        origin: "Bacolod, Negros Occidental",
+        image: "images/chicken-inasal.webp"
+    },
+
+    {
+        name: "Lechon",
+        description: "A whole pig slowly roasted over charcoal until the skin becomes crisp and the meat remains tender and flavorful.",
+        region: "Visayas",
+        origin: "Cebu",
+        image: "images/lechon.webp"
+    },
+
+    {
+        name: "Kansi",
+        description: "A hearty sour soup made with beef shank and bone marrow, traditionally soured with batuan and flavored with local spices.",
+        region: "Visayas",
+        origin: "Iloilo",
+        image: "images/kansi.webp"
+    },
+
+    {
+        name: "Kinilaw",
+        description: "Fresh seafood cured in vinegar and mixed with ingredients such as ginger, onion, chili, and citrus.",
+        region: "Visayas",
+        origin: "Visayan regions",
+        image: "images/kinilaw.webp"
+    },
+
+    {
+        name: "Pastil",
+        description: "Steamed rice wrapped in banana leaves and topped with seasoned shredded meat, commonly chicken, beef, or fish.",
+        region: "Mindanao",
+        origin: "Maguindanao",
+        image: "images/pastil.webp"
+    },
+
+    {
+        name: "Chicken Piaparan",
+        description: "A flavorful Maranao chicken dish cooked with coconut milk, grated coconut, turmeric, chili, and aromatic spices.",
+        region: "Mindanao",
+        origin: "Lanao",
+        image: "images/piaparan.webp"
+    },
+
+    {
+        name: "Beef Rendang",
+        description: "A rich and spicy slow-cooked beef dish prepared with coconut milk and aromatic spices, reflecting the culinary connections of the southern Philippines.",
+        region: "Mindanao",
+        origin: "Maranao culinary tradition",
+        image: "images/beef-rendang.webp"
+    }
+];
+
+export default filipinoDishes;

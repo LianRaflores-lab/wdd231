@@ -1,0 +1,82 @@
+@media only screen and (min-width: 1025px) {
+    header, main, nav, footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 4fr;
+        background: var(--Warm-cream);
+    }
+
+    .navigation li {
+        width: 200px;
+        height: auto;
+        transition: transform .5s ease;
+    }
+
+    .navigation li:hover {
+        border: 1px solid var(--Golden-yellow);
+    }
+
+    .hero-button:hover {
+        background-color: var(--Dark-brown);
+        color: var(--Warm-cream);
+    }
+
+    #featured-dishes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .region-card a span:hover {
+        background: var(--Dark-brown);
+    }
+
+    .luzon {
+        transition: transform 0.4s ease;
+    }
+
+    .luzon:hover {
+        transform: scale(1.1);
+    }
+
+    .visayas {
+        transition: transform 0.4s ease;
+    }
+
+    .visayas:hover {
+        transform: scale(1.1);
+    }
+
+    .mindanao {
+        transition: transform 0.4s ease;
+    }
+
+    .mindanao:hover {
+        transform: scale(1.1);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        transition: transform 1s ease;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
+}
