@@ -430,68 +430,48 @@ footer {
 
 /*-------- Form Confirmation ---------*/
 
-
-/* Confirmation page */
-.confirmation-page {
-    max-width: 700px;
+.confirmation {
+    max-width: 800px;
+    width: 90%;
     margin: 3rem auto;
-    padding: 1.5rem;
-}
-
-.confirmation-card {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem;
+    background-color: var(--Warm-cream);
+    border: 1px solid var(--Warm-cream);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(74, 45, 29, 0.12);
+    color: var(--Dark-brown);
     text-align: center;
-    background-color: #fffdf8;
-    border: 1px solid #e5d5c5;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.success-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 1rem;
-    border-radius: 50%;
-    background-color: #e1edda;
-    color: #35652d;
-    font-size: 2.5rem;
-    font-weight: bold;
+.confirmation h1 {
+    color: var(--Deep-green);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
 }
 
-.confirmation-card h1 {
-    color: #6b3e26;
-}
-
-.confirmation-card p {
+.confirmation > p {
+    color: var(--Dark-brown);
+    font-size: 1.05rem;
     line-height: 1.7;
+    margin-bottom: 2rem;
 }
 
-.confirmation-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+.confirmation section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    border-left: 5px solid var(--Golden-yellow);
+    text-align: left;
 }
 
-.confirmation-btn {
-    display: inline-block;
-    padding: 0.9rem 1.5rem;
-    border-radius: 6px;
-    background-color: #6b3e26;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.confirmation section p {
+    line-height: 1.7;
+    margin: 0.8rem 0;
+    overflow-wrap: anywhere;
 }
 
-.confirmation-btn:hover {
-    background-color: #8b5e3c;
-}
-
-.back-link {
+.confirmation section strong {
     color: #6b3e26;
 }
 
@@ -502,5 +482,29 @@ footer {
     max-height: 300px;
     object-fit: cover;
     margin: 1rem auto;
+    border-radius: 10px;
+    border: 1px solid var(--Warm-cream);
+}
+
+.confirmation > a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.85rem 1.3rem;
+    background-color: var(--Deep-green);
+    color: var(--Golden-yellow);
+    text-decoration: none;
+    font-weight: bold;
     border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.confirmation > a:hover {
+    background-color: var(--Dark-brown);
+    transform: translateY(-2px);
+    color: var(--Warm-cream);
+}
+
+.confirmation > a:focus-visible {
+    outline: 3px solid var(--Golden-yellow);
+    outline-offset: 4px;
 }
