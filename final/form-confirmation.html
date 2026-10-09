@@ -37,42 +37,28 @@
         </ul>
     </nav>
 
-    <main class="confirmation-page">
-        <div class="confirmation-card">
-            <div class="success-icon" aria-hidden="true">✓</div>
+ 
+    <main class="confirmation">
+        <h1>Thank You for Your Submission!</h1>
+        <p>Here is the dish information you submitted:</p>
 
-            <h1>Thank You for Sharing!</h1>
+        <section>
+            <p><strong>Dish Name:</strong> <span id="confirm-name"></span></p>
+            <p><strong>Region:</strong> <span id="confirm-region"></span></p>
+            <p><strong>Origin:</strong> <span id="confirm-origin"></span></p>
+            <p><strong>Description:</strong> <span id="confirm-description"></span></p>
 
-            <p>
-                Thank you for contributing to the Salo-Salo Filipino Food Guide.
-                Here's the dish information you submitted.
-            </p>
-
-            <section id="submission-details" aria-live="polite">
-                <h2>Dish Details</h2>
-
-                <p><strong>Dish Name:</strong> <span id="confirm-name"></span></p>
-                <p><strong>Region:</strong> <span id="confirm-region"></span></p>
-                <p><strong>Province or City:</strong> <span id="confirm-origin"></span></p>
-                <p><strong>Description:</strong> <span id="confirm-description"></span></p>
-
-                <div id="confirm-image-container" hidden>
-                    <p><strong>Dish Image:</strong></p>
-                    <img id="confirm-image" alt="Submitted dish">
-                </div>
-            </section>
-
-            <div class="confirmation-links">
-                <a href="dishes.html" class="confirmation-btn">
-                    Explore Dishes
-                </a>
-
-                <a href="salo-salo.html" class="back-link">
-                    Return to Home
-                </a>
+            <div id="confirm-image-container" hidden>
+            <p><strong>Dish Image:</strong></p>
+            <img id="confirm-image" alt="Submitted dish">
             </div>
-        </div>
+        </section>
+
+        <a href="dishes.html">Browse Dishes</a>
+        <a href="salo-salo.html">Return Home</a>
     </main>
+
+
    <footer>
         <section class="copyright info">
             <span class="bold">Salo-Salo Filipino Food Guide</span>
