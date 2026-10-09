@@ -53,24 +53,19 @@ function selectRegion(region) {
     displayDishes(filteredDishes);
 }
 
-// Read the region from the URL
-const params = new URLSearchParams(window.location.search);
-const requestedRegion = params.get("region");
-
 const validRegions = ["Luzon", "Visayas", "Mindanao"];
-const initialRegion = validRegions.includes(requestedRegion)
+
+const selectedRegion = validRegions.includes(requestedRegion)
     ? requestedRegion
     : "All";
 
-// Set the initial dishes based on the URL
-selectRegion(initialRegion);
+const filteredDishes = selectedRegion === "All"
+    ? filipinoDishes
+    : filipinoDishes.filter(
+        dish => dish.region === selectedRegion
+    );
 
-// Allow users to change regions on the dishes page
-regionButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        selectRegion(button.dataset.region);
-    });
-});
+displayDishes(filteredDishes);
 
 
 
