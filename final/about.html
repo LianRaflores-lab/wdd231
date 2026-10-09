@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salo-Salo About page</title>
+    <meta name="description" content="Salo-Salo is a website that helps people across the globe explore and learn the beauty and majesty of Filipino cuisine">
+    <meta name="author" content="Lianzel Raflores">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/salo-small.css">
+    <link rel="stylesheet" href="styles/salo-large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+    <meta property="og:title" content="Salo-Salo Filipino Food Guide">
+    <meta name="og:description" content="Lian Raflores' WDD 231 Web Frontend Development Final project About page.">
+    <meta property="og:image" content="https://lianraflores-lab.github.io/wdd231/final/images/salo-salo-logo.png">
+    <meta property="og:url" content="https://salo-salo.com">
+</head>
+<body>
+    <header>
+        <img src="images/salo-salo-logo.png" alt="Website Logo">
+        <span class="name">Salo-Salo</span>
+        <button id="ham-btn" class="hamburger" aria-label="menu button"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="salo-salo.html">Home</a></li>
+            <li><a href="dishes.html">Dishes</a></li>
+            <li><a href="add.html">Add Dishes</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <img src="images/kamayan.webp"
+                 alt="A table filled with Filipino dishes">
+
+            <div class="about-hero-content">
+                <p class="eyebrow">Our Story</p>
+                <h1>Every Dish Tells a Story</h1>
+                <p>
+                    Discover the flavors, traditions, and stories
+                    that make Filipino cuisine special.
+                </p>
+                <a href="dishes.html" class="hero-button">
+                    Explore Our Dishes
+                </a>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2>What Is Salo-Salo?</h2>
+                <p>
+                    In Filipino culture, salo-salo refers to gathering
+                    together to share food and enjoy one another's company.
+                    It represents more than a meal—it celebrates family,
+                    friendship, hospitality, and connection.
+                </p>
+                <p>
+                    Inspired by this tradition, Salo-Salo Filipino Food
+                    Guide was created to help people discover the dishes,
+                    ingredients, and cultural stories that make Filipino
+                    cuisine unique.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section about-highlight">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to introduce people to the rich diversity
+                of Filipino food by exploring its recipes, regional
+                origins, and cultural influences. We want every visitor
+                to discover something new and develop a deeper
+                appreciation for the Philippines' culinary heritage.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Three Regions, Countless Flavors</h2>
+
+            <div class="about-regions">
+                <article class="about-region-card">
+                    <img src="images/luzon.webp" alt="Landscape of Luzon">
+                    <h3>Luzon</h3>
+                    <p>
+                        Explore diverse cooking traditions, from
+                        vegetable-rich Ilocano dishes to the bold,
+                        spicy flavors of Bicol.
+                    </p>
+                    <a href="dishes.html?region=Luzon">
+                        Explore Luzon
+                    </a>
+                </article>
+
+                <article class="about-region-card">
+                    <img src="images/visayas.webp" alt="Coastal scenery in the Visayas">
+                    <h3>Visayas</h3>
+                    <p>
+                        Discover island cooking, fresh seafood,
+                        grilled specialties, and beloved celebration
+                        dishes.
+                    </p>
+                    <a href="dishes.html?region=Visayas">
+                        Explore Visayas
+                    </a>
+                </article>
+
+                <article class="about-region-card">
+                    <img src="images/mindanao.webp" alt="Landscape of Mindanao">
+                    <h3>Mindanao</h3>
+                    <p>
+                        Learn about distinctive spice blends,
+                        Indigenous food traditions, and the diverse
+                        culinary heritage of its communities.
+                    </p>
+                    <a href="dishes.html?region=Mindanao">
+                        Explore Mindanao
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section about-highlight">
+            <h2>Preserving Food, Sharing Stories</h2>
+            <p>
+                Every Filipino dish carries memories, traditions,
+                and the creativity of the people who prepare it.
+                Through Salo-Salo, we hope to celebrate these stories
+                and inspire more people to explore, appreciate,
+                and share Filipino food.
+            </p>
+            <a href="dishes.html" class="hero-button">
+                Discover Filipino Cuisine
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <section class="copyright info">
+            <span class="bold">Salo-Salo Filipino Food Guide</span>
+            <p>11 San Luis Street</p>
+            <p>Antipolo City, Rizal</p>
+            <p>info@salo-salo.org</p>
+            <p>(122) 333 4444</p>
+        </section>
+
+        <section class="link-icons">
+            <a href="https://www.linkedin.com/in/lianzel-raflores-3ba14726a/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/LianRaflores-lab" target="_blank"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://www.facebook.com/lian.raflores" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        </section>
+
+        <section class="copyright">
+            <p>WDD 231 | Final Project</p>
+            <p>©<span id="currentyear"></span>&nbsp;| Lianzel Raflores | Philippines</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+    
+</body>
+</html>
