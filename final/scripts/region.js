@@ -73,3 +73,25 @@ regionButtons.forEach(button => {
     });
 });
 
+regionButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        // Remove active class from all buttons
+        regionButtons.forEach((btn) => {
+            btn.classList.remove("active-region");
+        });
+
+        // Highlight the clicked button
+        button.classList.add("active-region");
+
+        const selectedRegion = button.dataset.region;
+
+        const filteredDishes =
+            selectedRegion === "All"
+                ? filipinoDishes
+                : filipinoDishes.filter(
+                    (dish) => dish.region === selectedRegion
+                );
+
+        displayDishes(filteredDishes);
+    });
+});
