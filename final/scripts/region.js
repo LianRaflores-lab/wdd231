@@ -1,4 +1,5 @@
 
+
 import filipinoDishes from "../data/dishes.mjs";
 
 const dishContainer = document.querySelector("#dish-container");
@@ -53,19 +54,24 @@ function selectRegion(region) {
     displayDishes(filteredDishes);
 }
 
-const validRegions = ["Luzon", "Visayas", "Mindanao"];
+// Read the region from the URL
+const params = new URLSearchParams(window.location.search);
+const requestedRegion = params.get("region");
 
-const selectedRegion = validRegions.includes(requestedRegion)
+const validRegions = ["Luzon", "Visayas", "Mindanao"];
+const initialRegion = validRegions.includes(requestedRegion)
     ? requestedRegion
     : "All";
 
-const filteredDishes = selectedRegion === "All"
-    ? filipinoDishes
-    : filipinoDishes.filter(
-        dish => dish.region === selectedRegion
-    );
+// Set the initial dishes based on the URL
+selectRegion(initialRegion);
 
-displayDishes(filteredDishes);
+// Allow users to change regions on the dishes page
+regionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        selectRegion(button.dataset.region);
+    });
+});
 
 
 
