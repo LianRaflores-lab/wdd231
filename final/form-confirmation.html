@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/salo-small.css">
     <link rel="stylesheet" href="styles/salo-large.css">
 
-    <script type="module" src="scripts/feature.js"></script>
+    <script src="scripts/confirmation.js"></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 
@@ -30,51 +30,50 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="salo-salo.html">Home</a></li>
+            <li><a href="salo-salo.html">Home</a></li>
             <li><a href="dishes.html">Dishes</a></li>
-            <li><a href="add.html">Add Dishes</a></li>
+            <li class="current"><a href="add.html">Add Dishes</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <main>
-        <section class="hero">
-            <img src="images/hero.webp" alt="Filipino food served on a table">
-    
-            <div class="hero-content">
-                <h1>Salo-Salo</h1>
-                <p>Discover delicious Filipino food and the stories behind every dish.</p>
-                <a href="dishes.html" class="hero-button">Explore Filipino Food</a>
+
+    <main class="confirmation-page">
+        <div class="confirmation-card">
+            <div class="success-icon" aria-hidden="true">✓</div>
+
+            <h1>Thank You for Sharing!</h1>
+
+            <p>
+                Thank you for contributing to the Salo-Salo Filipino Food Guide.
+                Here's the dish information you submitted.
+            </p>
+
+            <section id="submission-details" aria-live="polite">
+                <h2>Dish Details</h2>
+
+                <p><strong>Dish Name:</strong> <span id="confirm-name"></span></p>
+                <p><strong>Region:</strong> <span id="confirm-region"></span></p>
+                <p><strong>Province or City:</strong> <span id="confirm-origin"></span></p>
+                <p><strong>Description:</strong> <span id="confirm-description"></span></p>
+
+                <div id="confirm-image-container" hidden>
+                    <p><strong>Dish Image:</strong></p>
+                    <img id="confirm-image" alt="Submitted dish">
+                </div>
+            </section>
+
+            <div class="confirmation-links">
+                <a href="dishes.html" class="confirmation-btn">
+                    Explore Dishes
+                </a>
+
+                <a href="salo-salo.html" class="back-link">
+                    Return to Home
+                </a>
             </div>
-        </section>
-
-        <section class="feature">
-            <h1>Featured Dishes</h1>
-
-            <div id="featured-dishes"></div>
-        </section>
-
-        <section class="explore">
-            <h1>Explore Filipino Food by Regions</h1>
-
-            <div class="region-card">
-                <a href="dishes.html?region=Luzon" class="region-card luzon">
-                    <img src="images/luzon.webp" alt="Rice Terraces">
-                    <span>Luzon</span>
-                </a>
-
-                <a href="dishes.html?region=Visayas " class="region-card visayas">
-                    <img src="images/visayas.webp" alt="View of the sea">
-                    <span>Visayas</span>
-                </a>
-
-                <a href="dishes.html?region=Mindanao" class="region-card mindanao">
-                    <img src="images/mindanao.webp" alt="Las Casas Filipinas de Acuzar">
-                    <span>Mindanao</span>
-                </a>
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
+   <footer>
         <section class="copyright info">
             <span class="bold">Salo-Salo Filipino Food Guide</span>
             <p>11 San Luis Street</p>
@@ -95,6 +94,5 @@
             <p id="lastModified"></p>
         </section>
     </footer>
-    
 </body>
 </html>

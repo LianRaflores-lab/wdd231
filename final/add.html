@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/salo-small.css">
     <link rel="stylesheet" href="styles/salo-large.css">
 
-    <script type="module" src="scripts/feature.js"></script>
+    <script src="scripts/add-dish.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 
@@ -30,50 +30,70 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="salo-salo.html">Home</a></li>
+            <li><a href="salo-salo.html">Home</a></li>
             <li><a href="dishes.html">Dishes</a></li>
-            <li><a href="add.html">Add Dishes</a></li>
+            <li class="current"><a href="add.html">Add Dishes</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <main>
-        <section class="hero">
-            <img src="images/hero.webp" alt="Filipino food served on a table">
-    
-            <div class="hero-content">
-                <h1>Salo-Salo</h1>
-                <p>Discover delicious Filipino food and the stories behind every dish.</p>
-                <a href="dishes.html" class="hero-button">Explore Filipino Food</a>
-            </div>
-        </section>
+   <main class="add-dish-page">
+        <h1>Share a Filipino Dish</h1>
+        <p>
+            Know a delicious Filipino dish? Share its story and help
+            others discover the flavors of the Philippines!
+        </p>
 
-        <section class="feature">
-            <h1>Featured Dishes</h1>
+        <form id="add-dish-form">
+            <label for="dish-name">Dish Name</label>
+            <input
+                type="text"
+                id="dish-name"
+                name="name"
+                required
+                maxlength="80"
+                placeholder="e.g., Chicken Adobo"
+            >
 
-            <div id="featured-dishes"></div>
-        </section>
+            <label for="dish-region">Region</label>
+            <select id="dish-region" name="region" required>
+                <option value="">Select a region</option>
+                <option value="Luzon">Luzon</option>
+                <option value="Visayas">Visayas</option>
+                <option value="Mindanao">Mindanao</option>
+            </select>
 
-        <section class="explore">
-            <h1>Explore Filipino Food by Regions</h1>
+            <label for="dish-origin">Province or City</label>
+            <input
+                type="text"
+                id="dish-origin"
+                name="origin"
+                maxlength="100"
+                placeholder="e.g., Pampanga"
+            >
 
-            <div class="region-card">
-                <a href="dishes.html?region=Luzon" class="region-card luzon">
-                    <img src="images/luzon.webp" alt="Rice Terraces">
-                    <span>Luzon</span>
-                </a>
+            <label for="dish-description">Description</label>
+            <textarea
+                id="dish-description"
+                name="description"
+                rows="5"
+                required
+                maxlength="500"
+                placeholder="Describe the dish and its ingredients..."
+            ></textarea>
 
-                <a href="dishes.html?region=Visayas " class="region-card visayas">
-                    <img src="images/visayas.webp" alt="View of the sea">
-                    <span>Visayas</span>
-                </a>
+            <label for="dish-image">Image URL (optional)</label>
+            <input
+                type="url"
+                id="dish-image"
+                name="image"
+                placeholder="https://example.com/dish.jpg"
+            >
 
-                <a href="dishes.html?region=Mindanao" class="region-card mindanao">
-                    <img src="images/mindanao.webp" alt="Las Casas Filipinas de Acuzar">
-                    <span>Mindanao</span>
-                </a>
-            </div>
-        </section>
+            <button type="submit">Submit Dish</button>
+            <p id="form-message" role="status" aria-live="polite"></p>
+        </form>
     </main>
+
     <footer>
         <section class="copyright info">
             <span class="bold">Salo-Salo Filipino Food Guide</span>

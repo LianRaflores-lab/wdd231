@@ -358,3 +358,149 @@ footer {
 .dish-info {
     padding: 1rem;
 }
+
+/*-------- Add Dish Page ---------*/
+
+
+/* Add a dish form */
+.add-dish-page {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.add-dish-page h1 {
+    color: var(--Deep-green);
+    text-align: center;
+}
+
+.add-dish-page > p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+#add-dish-form {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--White);
+    border-radius: 12px;
+    background: #fffdf8;
+}
+
+#add-dish-form label {
+    font-weight: bold;
+    color: var(--Deep-green);
+}
+
+#add-dish-form input,
+#add-dish-form select,
+#add-dish-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--Golden-yellow);
+    border-radius: 6px;
+    font: inherit;
+}
+
+#add-dish-form input:focus,
+#add-dish-form select:focus,
+#add-dish-form textarea:focus {
+    outline: 2px solid var(--Dark-brown);
+    outline-offset: 2px;
+}
+
+#add-dish-form button {
+    margin-top: 0.75rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--Deep-green);
+    color: var(--Golden-yellow);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#form-message {
+    line-height: 1.5;
+}
+
+/*-------- Form Confirmation ---------*/
+
+
+/* Confirmation page */
+.confirmation-page {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+.confirmation-card {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    background-color: #fffdf8;
+    border: 1px solid #e5d5c5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: #e1edda;
+    color: #35652d;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.confirmation-card h1 {
+    color: #6b3e26;
+}
+
+.confirmation-card p {
+    line-height: 1.7;
+}
+
+.confirmation-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.confirmation-btn {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    border-radius: 6px;
+    background-color: #6b3e26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.confirmation-btn:hover {
+    background-color: #8b5e3c;
+}
+
+.back-link {
+    color: #6b3e26;
+}
+
+#confirm-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 1rem auto;
+    border-radius: 8px;
+}

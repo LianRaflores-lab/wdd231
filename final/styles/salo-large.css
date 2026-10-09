@@ -95,4 +95,14 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
+
+    #add-dish-form button:hover {
+        background: var(--Dark-brown);
+        color: var(--Warm-cream);
+    }
+
+    .confirmation-links {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
