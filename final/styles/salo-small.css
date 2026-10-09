@@ -292,3 +292,69 @@ footer {
     display: inline-block;
     min-width: 4ch;
 }
+
+/*-------- Dishes Page ---------*/
+
+.header p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--Dark-brown);
+    justify-self: center;
+}
+
+.region-buttons {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.region-btn {
+    padding: 0.75rem 1.25rem;
+    margin: 0.3rem;
+    border: 1px solid var(--Dark-brown);
+    border-radius: 30px;
+    background-color: white;
+    color: var(--Dark-brown);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.region-btn.active-region {
+    background-color: var(--Dark-brown);
+    color: var(--Warm-cream);
+}
+
+.dishes-grid {
+    display: block;
+}
+
+.dishes-card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--Dark-brown);
+    background: var(--White);
+    margin: 3rem;
+
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dishes-card img {
+    width: 100%;
+    height: auto;
+}
+
+.dish-info {
+    padding: 1rem;
+}

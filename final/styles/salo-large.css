@@ -79,4 +79,20 @@
     footer img:hover {
         transform: scale(1.1);
     }
+
+    .region-btn {
+        transition: .5s ease;
+    }
+
+    .region-btn:hover {
+        transform: scale(1.1);
+        color: var(--Warm-cream);
+        background-color: var(--Dark-brown);
+    }
+
+    .dish-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }

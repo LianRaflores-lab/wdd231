@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salo-Salo Home page</title>
+    <title>Salo-Salo Dishes page</title>
     <meta name="description" content="Salo-Salo is a website that helps people across the globe explore and learn the beauty and majesty of Filipino cuisine">
     <meta name="author" content="Lianzel Raflores">
 
@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="styles/salo-small.css">
     <link rel="stylesheet" href="styles/salo-large.css">
 
-    <script type="module" src="scripts/feature.js"></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/region.js"></script>
 
     <meta property="og:title" content="Salo-Salo Filipino Food Guide">
-    <meta name="og:description" content="Lian Raflores' WDD 231 Web Frontend Development Final project homepage.">
+    <meta name="og:description" content="Lian Raflores' WDD 231 Web Frontend Development Final project Dishes page.">
     <meta property="og:image" content="https://lianraflores-lab.github.io/wdd231/final/images/salo-salo-logo.png">
     <meta property="og:url" content="https://salo-salo.com">
 </head>
@@ -30,48 +30,27 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="salo-salo.html">Home</a></li>
-            <li><a href="dishes.html">Dishes</a></li>
+            <li><a href="salo-salo.html">Home</a></li>
+            <li class="current"><a href="dishes.html">Dishes</a></li>
             <li><a href="regions.html">Regions</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
     <main>
-        <section class="hero">
-            <img src="images/hero.webp" alt="Filipino food served on a table">
-    
-            <div class="hero-content">
-                <h1>Salo-Salo</h1>
-                <p>Discover delicious Filipino food and the stories behind every dish.</p>
-                <a href="dishes.html" class="hero-button">Explore Filipino Food</a>
-            </div>
+        <div class="header">
+            <h1>Our Featured Dishes</h1>
+            <p>Explore our dishes by regions</p>
+        </div>
+
+        <section class="region-buttons">
+            <button class="region-btn" data-region="All">All Regions</button>
+            <button class="region-btn" data-region="Luzon">Luzon</button>
+            <button class="region-btn" data-region="Visayas">Visayas</button>
+            <button class="region-btn" data-region="Mindanao">Mindanao</button>
         </section>
 
-        <section class="feature">
-            <h1>Featured Dishes</h1>
+        <section id="dish-container" class="dish-grid">
 
-            <div id="featured-dishes"></div>
-        </section>
-
-        <section class="explore">
-            <h1>Explore Filipino Food by Regions</h1>
-
-            <div class="region-card">
-                <a href="regions.html?region=Luzon" class="region-card luzon">
-                    <img src="images/luzon.webp" alt="Rice Terraces">
-                    <span>Luzon</span>
-                </a>
-
-                <a href="regions.html?region=Visayas" class="region-card visayas">
-                    <img src="images/visayas.webp" alt="View of the sea">
-                    <span>Visayas</span>
-                </a>
-
-                <a href="regions.html?region=Mindanao" class="region-card mindanao">
-                    <img src="images/mindanao.webp" alt="Las Casas Filipinas de Acuzar">
-                    <span>Mindanao</span>
-                </a>
-            </div>
         </section>
     </main>
     <footer>
