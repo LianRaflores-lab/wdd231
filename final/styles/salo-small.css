@@ -415,6 +415,27 @@ footer {
     min-width: 4ch;
 }
 
+footer a.attributes {
+    justify-content: center;
+    display: flex;
+    margin: 0.5rem auto;
+    max-height: 40px;
+    max-width: 200px;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: var(--Golden-yellow);
+    color: var(--Dark-brown);
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease
+}
+
+footer a.attributes:hover {
+    background-color: var(--Dark-brown);
+    color: var(--Warm-cream);
+    border: 1px solid var(--Golden-yellow);
+}
+
 /*-------- Dishes Page ---------*/
 
 .header p {
