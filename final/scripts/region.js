@@ -41,6 +41,12 @@ function displayDishes(dishList) {
 function selectRegion(region) {
     const selectedRegion = region || "All";
 
+    try {
+        localStorage.setItem("lastRegion", selectedRegion);
+    } catch (error) {
+        console.error("Could not save region:", error);
+    }
+
     const filteredDishes = selectedRegion === "All"
         ? filipinoDishes
         : filipinoDishes.filter(
@@ -63,9 +69,19 @@ const params = new URLSearchParams(window.location.search);
 const requestedRegion = params.get("region");
 
 const validRegions = ["Luzon", "Visayas", "Mindanao"];
+
+let savedRegion = null;
+try {
+    savedRegion = localStorage.getItem("lastRegion");
+} catch (error) {
+    console.error("Could not read saved region:", error);
+}
+
 const initialRegion = validRegions.includes(requestedRegion)
     ? requestedRegion
-    : "All";
+    : validRegions.includes(savedRegion)
+        ? savedRegion
+        : "All";
 
 // Only render if the data loaded (otherwise keep the error message)
 if (filipinoDishes.length > 0) {

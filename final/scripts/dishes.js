@@ -7,8 +7,13 @@ export async function getDishes() {
         return await response.json();
     } catch (error) {
         console.error("Could not load dishes:", error);
-        document.querySelector("#dish-container").innerHTML =
-            "<p>Sorry, the dishes could not be loaded right now.</p>";
+        const container =
+            document.querySelector("#dish-container") ||
+            document.querySelector("#featured-dishes");
+        if (container) {
+            container.innerHTML =
+                "<p>Sorry, the dishes could not be loaded right now.</p>";
+        }
         return [];
     }
 }

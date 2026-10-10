@@ -1,25 +1,22 @@
-import filipinoDishes from "../data/dishes.mjs";
+import { getDishes } from "./dishes.js";
 
 const featureContainer = document.getElementById("featured-dishes");
+const filipinoDishes = await getDishes();
 
-// Make a copy of the dishes array
-const shuffled = [...filipinoDishes];
+// Only render if the data loaded (otherwise keep the error message)
+if (filipinoDishes.length > 0) {
+    const shuffled = [...filipinoDishes];
 
-// Shuffle the dishes
-for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
 
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-}
+    const featured = shuffled.slice(0, 3);
 
-// Select the first 3 dishes
-const featured = shuffled.slice(0, 3);
-
-// Display the 3 dishes
-featured.forEach(dish => {
-    featureContainer.innerHTML += `
+    featureContainer.innerHTML = featured.map(dish => `
         <article class="dish-card">
-            <img src="${dish.image}" 
+            <img src="${dish.image}"
             srcset="
                 ${dish.imageSmall} 300w,
                 ${dish.image} 450w
@@ -27,7 +24,7 @@ featured.forEach(dish => {
             sizes="(max-width: 650px) 100vw, 450px"
             width="450" height="300"
             alt="${dish.name}" loading="lazy">
-            
+
             <div class="dish-info">
                 <h2>${dish.name}</h2>
                 <p>${dish.description}</p>
@@ -35,5 +32,5 @@ featured.forEach(dish => {
                 <p><strong>Origin:</strong> ${dish.origin}</p>
             </div>
         </article>
-    `;
-});
+    `).join("");
+}
