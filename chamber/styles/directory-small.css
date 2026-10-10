@@ -6,6 +6,7 @@
     --black: #000;
     --white: #fff;
     --light-grey: rgb(243, 244, 246);
+    --Light-Blue: #cfe8ff;
 }
 
 * {
@@ -461,7 +462,7 @@ legend {
 } 
 
 .submit-button:hover { 
-    background-color: var(--Bone-white); 
+    background-color: var(--Bone-White); 
     transform: translateY(-2px); 
     color: var(--Dark-Grey);
     border: 1px solid var(--Dark-Grey);
