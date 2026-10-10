@@ -73,12 +73,7 @@ selectRegion(initialRegion);
 regionButtons.forEach(button => {
     button.addEventListener("click", () => {
         selectRegion(button.dataset.region);
-    });
-});
 
-regionButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-        // Remove active class from all buttons
         regionButtons.forEach((btn) => {
             btn.classList.remove("active-region");
         });
