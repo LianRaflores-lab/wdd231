@@ -467,7 +467,7 @@ legend {
 } 
 
 .submit-button:hover { 
-    background-color: var(--bone-white); 
+    background-color: var(--Bone-white); 
     transform: translateY(-2px); 
     color: var(--Dark-Grey);
     border: 1px solid var(--Dark-Grey);
@@ -605,10 +605,6 @@ dialog::backdrop {
 
 /*----- Cards -----*/
 
-#discover-container {
-
-}
-
 #discover-container article {
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -663,11 +659,11 @@ dialog::backdrop {
 }
 
 #discover-container {
+    display: grid;
     gap: 1rem;
     padding: 1rem;
     align-items: start;
 
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
         "card1"
