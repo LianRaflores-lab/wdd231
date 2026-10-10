@@ -20,8 +20,11 @@ function displayDishes(dishList) {
         card.classList.add("dishes-card");
         card.style.animationDelay = `${index * 0.1}s`;
 
+        const isFirst = index === 0;
+
         card.innerHTML = `
-            <img src="${dish.image}" alt="${dish.name}" loading="lazy">
+            <img src="${dish.image}" alt="${dish.name}" loading="${isFirst ? 'eager' : 'lazy'}"
+            ${isFirst ? 'fetchpriority="high"' : ''}>
             <div class="dish-info">
                 <h3>${dish.name}</h3>
                 <p>${dish.description}</p>

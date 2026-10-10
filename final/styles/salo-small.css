@@ -161,6 +161,10 @@ header span {
 
 /*-------- Feature ---------*/
 
+#dish-container {
+    min-height: 100vh;
+}
+
 .dish-card {
     display: block;
     width: 100%;
@@ -178,13 +182,6 @@ header span {
     aspect-ratio: 3/2;
 }
 
-.dish-info {
-    text-align: center;
-    margin-top: 1rem;
-    max-width: 400px;
-    margin: 1rem auto;
-}
-
 /*-------- Explore ---------*/
 
 .explore {
@@ -199,8 +196,8 @@ header span {
 }
 
 .region-card {
-    display: absolute;
-    margin: 1rem;
+    margin: 1rem auto;
+    max-width: 85%;
 }
 
 .region-card a {
@@ -217,6 +214,7 @@ header span {
     object-fit: cover;
     display: block;
     filter: brightness(50%);
+    aspect-ratio: 3/2;
 }
 
 .region-card a span {
@@ -376,12 +374,12 @@ footer {
 }
 
 .link-icons img {
-    max-width: 100px;
-    height: auto;
     transition: transform 0.2s ease;
     width: 40px;
     height: 40px;
     display: block;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .link-icons {
@@ -400,12 +398,6 @@ footer {
 
 .copyright {
     padding: 1rem;
-}
-
-.link-icons img {
-    max-width: 100px;
-    max-height: 100px;
-    display: block;
 }
 
 #lastModified {
@@ -468,7 +460,7 @@ footer a.attributes:hover {
     color: var(--Warm-cream);
 }
 
-.dishes-grid {
+.dish-grid {
     display: block;
 }
 
@@ -477,7 +469,9 @@ footer a.attributes:hover {
     overflow: hidden;
     border: 1px solid var(--Dark-brown);
     background: var(--White);
-    margin: 3rem;
+    margin: 3rem auto;
+    max-width: 400px;
+    height: auto;
 
     opacity: 0;
     animation: fadeInUp 0.6s ease forwards;
@@ -498,10 +492,17 @@ footer a.attributes:hover {
 .dishes-card img {
     width: 100%;
     height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    max-width: 450px;
 }
 
 .dish-info {
     padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 400px;
+    margin: 1rem auto;
 }
 
 /*-------- Add Dish Page ---------*/
