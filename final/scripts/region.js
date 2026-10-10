@@ -67,12 +67,13 @@ const initialRegion = validRegions.includes(requestedRegion)
     ? requestedRegion
     : "All";
 
-// Set the initial dishes based on the URL
-selectRegion(initialRegion);
+// Only render if the data loaded (otherwise keep the error message)
+if (filipinoDishes.length > 0) {
+    selectRegion(initialRegion);
 
-// Allow users to change regions on the dishes page
-regionButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        selectRegion(button.dataset.region);
+    regionButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            selectRegion(button.dataset.region);
+        });
     });
-});
+}
