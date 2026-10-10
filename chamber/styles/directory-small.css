@@ -139,8 +139,6 @@ footer {
 }
 
 .link-icons img {
-    max-width: 100px;
-    height: auto;
     transition: transform 0.2s ease;
     width: 40px;
     height: 40px;
@@ -608,10 +606,7 @@ dialog::backdrop {
 /*----- Cards -----*/
 
 #discover-container {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: start;
+
 }
 
 #discover-container article {
@@ -668,6 +663,10 @@ dialog::backdrop {
 }
 
 #discover-container {
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
