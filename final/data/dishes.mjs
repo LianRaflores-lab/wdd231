@@ -4,7 +4,8 @@ const filipinoDishes = [
         description: "A savory dish of meat, usually chicken or pork, simmered with vinegar, garlic, soy sauce, peppercorns, and bay leaves.",
         region: "Luzon",
         origin: "Philippines",
-        image: "images/adobo.webp"
+        image: "images/adobo.webp",
+        imageSmall: "images/adobo-small.webp"
     },
 
     {
@@ -12,7 +13,8 @@ const filipinoDishes = [
         description: "A comforting sour soup made with meat or seafood, vegetables, and a souring ingredient such as tamarind.",
         region: "Luzon",
         origin: "Tagalog regions",
-        image: "images/sinigang.webp"
+        image: "images/sinigang.webp",
+        imageSmall: "images/sinigang-small.webp"
     },
 
     {
@@ -20,7 +22,8 @@ const filipinoDishes = [
         description: "Chopped and seasoned pork, traditionally made from parts of the pig's head and served sizzling with onions, calamansi, and chili.",
         region: "Luzon",
         origin: "Pampanga",
-        image: "images/sisig.webp"
+        image: "images/sisig.webp",
+        imageSmall: "images/sisig-small.webp"
     },
 
     {
@@ -28,7 +31,8 @@ const filipinoDishes = [
         description: "A rich stew made with meat and vegetables in a thick peanut-based sauce, commonly served with bagoong.",
         region: "Luzon",
         origin: "Pampanga",
-        image: "images/hero.webp"
+        image: "images/kare-kare.webp",
+        imageSmall: "images/kare-kare-small.webp"
     },
 
     {
@@ -36,7 +40,8 @@ const filipinoDishes = [
         description: "A vegetable dish made with ingredients such as bitter melon, eggplant, squash, okra, and beans, traditionally flavored with fermented fish or shrimp.",
         region: "Luzon",
         origin: "Ilocos",
-        image: "images/pinakbet.webp"
+        image: "images/pinakbet.webp",
+        imageSmall: "images/pinakbet-small.webp"
     },
 
     {
@@ -44,7 +49,8 @@ const filipinoDishes = [
         description: "A spicy and creamy pork dish cooked with coconut milk, chili peppers, shrimp paste, and aromatics.",
         region: "Luzon",
         origin: "Bicol",
-        image: "images/bicol-exp.webp"
+        image: "images/bicol-exp.webp",
+        imageSmall: "images/bicol-exp-small.webp"
     },
 
     {
@@ -52,7 +58,8 @@ const filipinoDishes = [
         description: "Grilled chicken marinated with vinegar, calamansi, garlic, ginger, and other seasonings, then basted while grilling.",
         region: "Visayas",
         origin: "Bacolod, Negros Occidental",
-        image: "images/chicken-inasal.webp"
+        image: "images/chicken-inasal.webp",
+        imageSmall: "images/chicken-inasal-small.webp"
     },
 
     {
@@ -60,7 +67,8 @@ const filipinoDishes = [
         description: "A whole pig slowly roasted over charcoal until the skin becomes crisp and the meat remains tender and flavorful.",
         region: "Visayas",
         origin: "Cebu",
-        image: "images/lechon.webp"
+        image: "images/lechon.webp",
+        imageSmall: "images/lechon-small.webp"
     },
 
     {
@@ -68,7 +76,8 @@ const filipinoDishes = [
         description: "A hearty sour soup made with beef shank and bone marrow, traditionally soured with batuan and flavored with local spices.",
         region: "Visayas",
         origin: "Iloilo",
-        image: "images/kansi.webp"
+        image: "images/kansi.webp",
+        imageSmall: "images/kansi-small.webp"
     },
 
     {
@@ -76,7 +85,8 @@ const filipinoDishes = [
         description: "Fresh seafood cured in vinegar and mixed with ingredients such as ginger, onion, chili, and citrus.",
         region: "Visayas",
         origin: "Visayan regions",
-        image: "images/kinilaw.webp"
+        image: "images/kinilaw.webp",
+        imageSmall: "images/kinilaw-small.webp"
     },
 
     {
@@ -84,7 +94,8 @@ const filipinoDishes = [
         description: "Steamed rice wrapped in banana leaves and topped with seasoned shredded meat, commonly chicken, beef, or fish.",
         region: "Mindanao",
         origin: "Maguindanao",
-        image: "images/pastil.webp"
+        image: "images/pastil.webp",
+        imageSmall: "images/pastil-small.webp"
     },
 
     {
@@ -92,7 +103,8 @@ const filipinoDishes = [
         description: "A flavorful Maranao chicken dish cooked with coconut milk, grated coconut, turmeric, chili, and aromatic spices.",
         region: "Mindanao",
         origin: "Lanao",
-        image: "images/piaparan.webp"
+        image: "images/piaparan.webp",
+        imageSmall: "images/piaparan-small.webp"
     },
 
     {
@@ -100,7 +112,8 @@ const filipinoDishes = [
         description: "A rich and spicy slow-cooked beef dish prepared with coconut milk and aromatic spices, reflecting the culinary connections of the southern Philippines.",
         region: "Mindanao",
         origin: "Maranao culinary tradition",
-        image: "images/beef-rendang.webp"
+        image: "images/beef-rendang.webp",
+        imageSmall: "images/beef-rendang-small.webp"
     }
 ];
 

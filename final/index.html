@@ -25,7 +25,7 @@
 </head>
 <body>
     <header>
-        <img src="images/salo-salo-logo.png" alt="Website Logo">
+        <img src="images/salo-salo-logo.webp" alt="Website Logo">
         <span class="name">Salo-Salo</span>
         <button id="ham-btn" class="hamburger" aria-label="menu button"></button>
     </header>
@@ -83,19 +83,47 @@
             <div class="region-explorer-buttons">
                 <button type="button" class="explore-region-btn"
                     data-explore-region="Luzon">
-                    <img src="images/vigan-luzon.webp" alt="Vigan, Luzon" loading="lazy">
+                    <img src="images/vigan-luzon.webp" alt="Vigan, Luzon" loading="lazy"
+                    srcset="
+                        images/vigan-luzon-small.webp 234w, 
+                        images/vigan-luzon-large.webp 468w
+                    "
+                    sizes="(max-width: 650px) 100vw, 234px"
+                    width="234" 
+                    height="313"
+                    >
                     <span>Explore Luzon</span>
                 </button>
 
                 <button type="button" class="explore-region-btn"
                     data-explore-region="Visayas">
-                    <img src="images/siquijor-visayas.webp" alt="Siquijor, Visayas" loading="lazy">
+                    <img src="images/siquijor-visayas.webp"
+                    srcset="
+                        images/siquijor-visayas-small.webp 234w, 
+                        images/siquijor-visayas-large.webp 468w
+                    "
+                    sizes="(max-width: 650px) 100vw, 234px"
+                    width="234" 
+                    height="313"
+                    loading="lazy"
+                    alt="Siquijor, Visayas"
+                    >
                     <span>Explore Visayas</span>
                 </button>
 
                 <button type="button" class="explore-region-btn"
                     data-explore-region="Mindanao">
-                    <img src="images/bukidnon-mindanao.webp" alt="Bukidnon, Mindanao" loading="lazy">
+                    <img src="images/bukidnon-mindanao.webp"
+                    srcset="
+                        images/bukidnon-mindanao-small.webp 234w, 
+                        images/bukidnon-mindanao-large.webp 468w
+                    "
+                    sizes="(max-width: 650px) 100vw, 234px"
+                    width="234" 
+                    height="313"
+                    loading="lazy"
+                    alt="Bukidnon, Mindanao"
+                    >
                     <span>Explore Mindanao</span>
                 </button>
             </div>

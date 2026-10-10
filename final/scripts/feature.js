@@ -19,7 +19,14 @@ const featured = shuffled.slice(0, 3);
 featured.forEach(dish => {
     featureContainer.innerHTML += `
         <article class="dish-card">
-            <img src="${dish.image}" alt="${dish.name}" loading="lazy">
+            <img src="${dish.image}" 
+            srcset="
+                ${dish.imageSmall} 300w,
+                ${dish.image} 450w
+            "
+            sizes="(max-width: 650px) 100vw, 450px"
+            width="450" height="300"
+            alt="${dish.name}" loading="lazy">
             
             <div class="dish-info">
                 <h2>${dish.name}</h2>
