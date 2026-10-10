@@ -1,6 +1,8 @@
 
 
-import filipinoDishes from "../data/dishes.mjs";
+import {getDishes} from "./dishes.js";
+
+const filipinoDishes = await getDishes();
 
 const dishContainer = document.querySelector("#dish-container");
 const regionButtons = document.querySelectorAll(".region-btn");
