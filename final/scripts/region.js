@@ -1,5 +1,4 @@
 
-
 import {getDishes} from "./dishes.js";
 
 const filipinoDishes = await getDishes();
